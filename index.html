@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body
+    class="grid min-h-screen place-items-center bg-veryDarkBlue font-overpass"
+  >
+    <!-- Rating state start -->
+    <main>
+      <section class="flex max-w-sm flex-col gap-8 p-6">
+        <article
+          class="article--1 container flex flex-col gap-6 rounded-2xl bg-gradient-to-t from-veryDarkBlue to-darkBlue p-6 text-[#fff] shadow-2xl"
+        >
+          <div class="flex flex-col items-start gap-4">
+            <div class="inline-block rounded-full bg-mdGray/10 p-3">
+              <img
+                class="h-3 w-3"
+                src="./images/icon-star.svg"
+                alt="star icon"
+              />
+            </div>
+            <h1 class="text-2xl font-bold">How did we do?</h1>
+            <p class="text-sm text-mdGray">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="flex justify-between">
+            <span
+              class="option active flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              >1</span
+            >
+            <span
+              class="option flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              >2</span
+            >
+            <span
+              class="option flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              >3</span
+            >
+            <span
+              class="option flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              >4</span
+            >
+            <span
+              class="option flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              >5</span
+            >
+          </div>
+          <button
+            class="btn cursor-pointer rounded-full bg-primaryClr py-2 uppercase tracking-widest transition duration-300 ease-in-out hover:bg-[#fff] hover:text-primaryClr"
+          >
+            Submit
+          </button>
+        </article>
+        <!-- thank you -->
+        <article class="article--2 hidden">
+          <article
+            class="container flex flex-col gap-6 rounded-2xl bg-darkBlue p-6 text-[#fff] shadow-2xl"
+          >
+            <div class="flex flex-col items-center gap-6">
+              <div class="flex flex-col gap-4">
+                <img
+                  src="./images/illustration-thank-you.svg"
+                  alt="thank you image"
+                />
+
+                <p class="text-primaryClr">
+                  You selected <span></span> out of 5
+                </p>
+              </div>
+              <div class="flex flex-col gap-4 text-center">
+                <h2 class="text-2xl">Thank you!</h2>
+                <p class="text-[15px] text-mdGray">
+                  We appreciate you taking the time to give a rating. If you
+                  ever need more support, don’t hesitate to get in touch!
+                </p>
+              </div>
+            </div>
+          </article>
+        </article>
+      </section>
+    </main>
+    <script src="/index.js"></script>
+  </body>
+</html>
