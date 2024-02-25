@@ -26,43 +26,43 @@
   >
     <!-- Rating state start -->
     <main>
-      <section class="flex max-w-sm flex-col gap-8 p-6">
+      <section class="flex max-w-md flex-col gap-8 p-6">
         <article
-          class="article--1 container flex flex-col gap-6 rounded-2xl bg-gradient-to-t from-veryDarkBlue to-darkBlue p-6 text-[#fff] shadow-2xl"
+          class="article--1 container flex flex-col gap-6 rounded-2xl bg-gradient-to-t from-veryDarkBlue to-darkBlue p-6 text-[#fff] shadow-2xl md:p-8"
         >
           <div class="flex flex-col items-start gap-4">
             <div class="inline-block rounded-full bg-mdGray/10 p-3">
               <img
-                class="h-3 w-3"
+                class="h-3 w-3 md:h-6 md:w-6"
                 src="./images/icon-star.svg"
                 alt="star icon"
               />
             </div>
-            <h1 class="text-2xl font-bold">How did we do?</h1>
-            <p class="text-sm text-mdGray">
+            <h1 class="text-2xl font-bold md:text-4xl">How did we do?</h1>
+            <p class="text-sm text-mdGray md:text-[1rem] md:leading-normal">
               Please let us know how we did with your support request. All
               feedback is appreciated to help us improve our offering!
             </p>
           </div>
           <div class="flex justify-between">
             <span
-              class="option active flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              class="option flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff] md:h-12 md:w-12"
               >1</span
             >
             <span
-              class="option flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              class="option flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff] md:h-12 md:w-12"
               >2</span
             >
             <span
-              class="option flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              class="option flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff] md:h-12 md:w-12"
               >3</span
             >
             <span
-              class="option flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              class="option flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff] md:h-12 md:w-12"
               >4</span
             >
             <span
-              class="option flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff]"
+              class="option flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-mdGray/10 p-5 text-lightGray transition duration-300 ease-in-out hover:bg-primaryClr hover:text-[#fff] focus:bg-mdGray focus:text-[#fff] md:h-12 md:w-12"
               >5</span
             >
           </div>
@@ -71,11 +71,12 @@
           >
             Submit
           </button>
+          <p class="error-message text-sm text-[#ff0000]"></p>
         </article>
         <!-- thank you -->
         <article class="article--2 hidden">
           <article
-            class="container flex flex-col gap-6 rounded-2xl bg-darkBlue p-6 text-[#fff] shadow-2xl"
+            class="container flex flex-col gap-6 rounded-2xl bg-darkBlue p-6 text-[#fff] shadow-2xl md:p-8"
           >
             <div class="flex flex-col items-center gap-6">
               <div class="flex flex-col gap-4">
@@ -84,13 +85,13 @@
                   alt="thank you image"
                 />
 
-                <p class="text-primaryClr">
+                <p class="text-primaryClr md:text-lg">
                   You selected <span></span> out of 5
                 </p>
               </div>
               <div class="flex flex-col gap-4 text-center">
-                <h2 class="text-2xl">Thank you!</h2>
-                <p class="text-[15px] text-mdGray">
+                <h2 class="text-2xl md:text-4xl">Thank you!</h2>
+                <p class="text-sm text-mdGray md:text-[1rem]">
                   We appreciate you taking the time to give a rating. If you
                   ever need more support, don’t hesitate to get in touch!
                 </p>

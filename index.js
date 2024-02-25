@@ -13,7 +13,16 @@ options.forEach((option) => {
   });
 });
 
-submitBtn.addEventListener("click", () => {
+submitBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  // Check if an option is selected
+  if (!selectedOption) {
+    // If no option is selected, display an error message
+    const errorMessage = document.querySelector(".error-message");
+    errorMessage.textContent = "Please select a number before submitting.";
+    return; // Exit the function early
+  }
+
   // Hide the first article and display the thank you article
   article1.classList.add("hidden");
   article2.classList.remove("hidden");
